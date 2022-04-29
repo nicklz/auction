@@ -16,7 +16,7 @@ export const Form = ({ setBids, bids, setMessage, setMessageType }) => {
     event.preventDefault();
     // Actually - lets limit them to a billion
     if (amount < 1000000000) {
-      const endpoint = 'http://localhost:8080/api/auctions/1/bid'
+      const endpoint = 'http://localhost:6868/api/auctions/1/bid'
 
       const post = {
         userId: user,

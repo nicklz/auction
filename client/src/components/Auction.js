@@ -17,7 +17,7 @@ export const Auction = () => {
   useEffect(() => {
     const getData = async () => {
       if (data.fetched !== true) {
-        const data = await fetchData('http://localhost:8080/api/auctions/1/get');
+        const data = await fetchData('http://localhost:6868/api/auctions/1/get');
 
         data.fetched = true;
         setAuction(data.auction);

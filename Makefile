@@ -5,8 +5,8 @@ default: up
 up:
 	@echo "Starting up containers..."
 	docker-compose up -d
-	@echo "http://localhost:1337/"
-	sudo chrome https://localhost:1337
+	@echo "http://localhost:1338/"
+	sudo chrome http://localhost:1338
 
 down:
 	@echo "Removing containers."
